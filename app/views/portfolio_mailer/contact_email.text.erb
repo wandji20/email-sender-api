@@ -1,0 +1,11 @@
+Hi, <%= @receiver_name %>
+
+Contact Request from <%= @sender_name || @sender_email %>
+
+<% if @sender_url %>
+  From: <%= @sender_url %>
+<% end %>
+
+
+<%= @sender_message %>
+
