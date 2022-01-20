@@ -5,13 +5,12 @@ class PortfolioMailer < ApplicationMailer
   #
   #   en.portfolio_mailer.contact_email.subject
   #
-  def contact_email(sender_info, receiver_info)
-    @receiver_name = receiver_info[:name]
-    @receiver_email = receiver_info[:email]
-    @sender_name = sender_info[:name]
-    @sender_url = sender_info[:website]
-    @sender_message = sender_info[:message]
-    @sender_email = sender_info[:email]
-    mail(to: @receiver_email)
+  def contact_email(params)
+    
+    @name = params[:name]
+    @email = params[:email]
+    @website = params[:website]
+    @message = params[:message]
+    mail(from: @email, to: ENV['APP_USERNAME'], subject: 'Contact Email')
   end
 end

@@ -1,14 +1,16 @@
-<h2>Hi, <%= @receiver_name %></h2>
+<h3>Contact Request from <%= @name || @email %></h3>
+<div>
+    <span>Email: </span>
+    <span><%= @email %></span>
+  </div>
 
-<h3>Contact Request from <%= @sender_name || @sender_email %></h3>
-
-<% if @sender_url %>
+<% if @website %>
   <div>
-    <span>From: </span>
-    <span><%= @sender_url %></span>
+    <span>Website: </span>
+    <span><%= @website %></span>
   </div>
 <% end %>
 
 
-<p><%= @sender_message %></p>
+<p><%= @message %></p>
 

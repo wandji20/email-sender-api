@@ -1,11 +1,11 @@
-Hi, <%= @receiver_name %>
 
-Contact Request from <%= @sender_name || @sender_email %>
+Contact Request from <%= @name || @semail %>
+Email: <%= @email %>
 
-<% if @sender_url %>
-  From: <%= @sender_url %>
+<% if @website %>
+  Website: <%= @website %>
 <% end %>
 
 
-<%= @sender_message %>
+<%= @message %>
 
