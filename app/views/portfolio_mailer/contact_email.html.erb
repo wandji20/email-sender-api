@@ -1,0 +1,16 @@
+<h3>Contact Request from <%= @name || @email %></h3>
+<div>
+    <span>Email: </span>
+    <span><%= @email %></span>
+  </div>
+
+<% if @website %>
+  <div>
+    <span>Website: </span>
+    <span><%= @website %></span>
+  </div>
+<% end %>
+
+
+<p><%= @message %></p>
+
