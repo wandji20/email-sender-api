@@ -4,7 +4,7 @@ class Api::V1::EmailsController < ApplicationController
       send_email
       render json: { message: 'Email Sent' }, status: :ok
     else
-      render json: { message: 'Kindly fill all Required Fields' }, status: :unprocessable_entity
+      render json: { error: 'Kindly fill all Required Fields' }, status: :unprocessable_entity
     end
   end
 
