@@ -1,24 +1,27 @@
-# README
+## Email API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Emailer for sending personal emails. <br>
+> This a simple api that allows me to send emails to my email address
 
-Things you may want to cover:
+## Built with
 
-* Ruby version
+- Ruby on Rails
+- Sidekiq
+- Redis
 
-* System dependencies
+## Endpoint
 
-* Configuration
+- https://email-api-wandji.herokuapp.com/api/v1/portfolio
+- Params
+  > email: required <br>
+  > message: required <br>
+  > name: optional <br>
+  > website: optional
 
-* Database creation
+## Author
 
-* Database initialization
+👤 Wandji Bertrand
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Github: [@wandji20](https://github.com/wandji20)
+- Twitter: [@wandjibertrand](https://twitter.com/wandjibertrand)
+- Linkedin: [Linkedin](https://www.linkedin.com/in/wandji-bertrand/)
